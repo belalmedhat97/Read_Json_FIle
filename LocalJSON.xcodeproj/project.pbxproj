@@ -13,6 +13,10 @@
 		57596C0724DD9CD800970799 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57596C0524DD9CD800970799 /* Main.storyboard */; };
 		57596C0924DD9CDA00970799 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57596C0824DD9CDA00970799 /* Assets.xcassets */; };
 		57596C0C24DD9CDA00970799 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57596C0A24DD9CDA00970799 /* LaunchScreen.storyboard */; };
+		57596C1524DD9D8400970799 /* Country.json in Resources */ = {isa = PBXBuildFile; fileRef = 57596C1424DD9D8400970799 /* Country.json */; };
+		57596C1824DD9FDB00970799 /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57596C1724DD9FDB00970799 /* CountryData.swift */; };
+		57596C1B24DDA64200970799 /* CountryLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57596C1A24DDA64200970799 /* CountryLoader.swift */; };
+		57596C1E24DDB88F00970799 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57596C1D24DDB88F00970799 /* CountryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		57596C0824DD9CDA00970799 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57596C0B24DD9CDA00970799 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57596C0D24DD9CDA00970799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57596C1424DD9D8400970799 /* Country.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Country.json; sourceTree = "<group>"; };
+		57596C1724DD9FDB00970799 /* CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		57596C1A24DDA64200970799 /* CountryLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryLoader.swift; sourceTree = "<group>"; };
+		57596C1D24DDB88F00970799 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,10 @@
 		57596BFE24DD9CD800970799 /* LocalJSON */ = {
 			isa = PBXGroup;
 			children = (
+				57596C1C24DDB87900970799 /* CustomViews */,
+				57596C1924DDA62C00970799 /* DataLoader */,
+				57596C1624DD9FCA00970799 /* Model */,
+				57596C1324DD9D6400970799 /* AppFiles */,
 				57596BFF24DD9CD800970799 /* AppDelegate.swift */,
 				57596C0124DD9CD800970799 /* SceneDelegate.swift */,
 				57596C0324DD9CD800970799 /* ViewController.swift */,
@@ -65,6 +77,38 @@
 				57596C0D24DD9CDA00970799 /* Info.plist */,
 			);
 			path = LocalJSON;
+			sourceTree = "<group>";
+		};
+		57596C1324DD9D6400970799 /* AppFiles */ = {
+			isa = PBXGroup;
+			children = (
+				57596C1424DD9D8400970799 /* Country.json */,
+			);
+			path = AppFiles;
+			sourceTree = "<group>";
+		};
+		57596C1624DD9FCA00970799 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57596C1724DD9FDB00970799 /* CountryData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57596C1924DDA62C00970799 /* DataLoader */ = {
+			isa = PBXGroup;
+			children = (
+				57596C1A24DDA64200970799 /* CountryLoader.swift */,
+			);
+			path = DataLoader;
+			sourceTree = "<group>";
+		};
+		57596C1C24DDB87900970799 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				57596C1D24DDB88F00970799 /* CountryCell.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57596C1524DD9D8400970799 /* Country.json in Resources */,
 				57596C0C24DD9CDA00970799 /* LaunchScreen.storyboard in Resources */,
 				57596C0924DD9CDA00970799 /* Assets.xcassets in Resources */,
 				57596C0724DD9CD800970799 /* Main.storyboard in Resources */,
@@ -139,7 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57596C0424DD9CD800970799 /* ViewController.swift in Sources */,
+				57596C1B24DDA64200970799 /* CountryLoader.swift in Sources */,
+				57596C1E24DDB88F00970799 /* CountryCell.swift in Sources */,
 				57596C0024DD9CD800970799 /* AppDelegate.swift in Sources */,
+				57596C1824DD9FDB00970799 /* CountryData.swift in Sources */,
 				57596C0224DD9CD800970799 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
